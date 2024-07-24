@@ -53,11 +53,12 @@
                         <label for="csvFile" class="btn btn-secondary">
                             <i class="fas fa-upload"></i> Upload CSV
                         </label>
+                        <a href="/sample_data/seromonitoring_data.csv" target="_blank" download style="color: #aec6cf; display: block; margin-top: 10px;">sample csv</a>
                         <input type="file" id="csvFile" accept=".csv" hidden>
                         <span id="fileName"></span>
                         <button id="calculate" class="btn">Calculate Risk</button>
                         <button id="refresh" class="btn btn-secondary"><span>&#8635;</span> Refresh </button>
-                    </div>
+                    </div>                                     
                 </div>
                 <div id="errorMessages" class="error-messages"></div>
                 <div id="results" class="results"></div>
