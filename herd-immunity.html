@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FMD Outbreak Risk Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="images/artpark.png" alt="ARTPARK Logo" class="logo" width="200" height="auto">
+        <div class="right-logos">
+            <img src="images/iisc.jpg" alt="IISc Logo" class="logo" width="70" height="auto">
+            <img src="images/icts.jpg" alt="ICTS Logo" class="logo" width="200" height="auto">
+        </div>
+    </div>
+    <div class="main-content">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#general-info" class="active"><i class="fas fa-info-circle"></i>General Overview</a></li>
+                    <li><a href="#risk-calculator"><i class="fas fa-calculator"></i> FMD Risk Calculator</a></li>
+                    <li><a href="#miscellaneous"><i class="fas fa-ellipsis-h"></i> Miscellaneous</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <div class="container">
+            <div id="general-info" class="tab-content active">
+                <h2>General Disease Overview</h2>
+                <p class="description">Foot-and-mouth disease (FMD) is a highly contagious viral disease which affects all cloven-hooved domestic animals, including cattle, buffaloes, sheep, goats, and pigs. The disease manifests as blisters on mouth, feet, nose and udders of the infected
+                    animal.</p>
+                <p class="description">The direct economic loss in India due to Foot-and-mouth disease (FMD) is approximately Rs. 20,000 crore per annum (Venkataramanan et al., 2006), with 80% of this loss attributed to a drop in milk production (Mathew and Menon, 2008). Additionally, countries free from FMD impose trade embargoes on the export of animals and animal products from affected countries, leading to further significant economic losses for India.</p>
+                <p class="description">Since 2004, the Government of India has implemented a bi-annual vaccination program known as the Foot-and-Mouth Disease Control Programme (FMDCP) to manage outbreaks. As part of this program, 200 pre and post-vaccination samples are collected from each district using a simple random sampling. In 2020, FMD-CP was incorporated into the Livestock Health & Disease
+                    Control Programme (LHD-CP). The new sampling scheme includes meta-data collection on age, species, sex, and location of animals. Samples are collected from animals in three age groups (6-12 months, 13-24 months, and >24 months) at a ratio of 5:4:1, following OIE guidelines.</p>
+            </div>
+            <div id="risk-calculator" class="tab-content">
+                <h2>FMD Outbreak Risk Calculator</h2>
+                <div class="input-section">
+                    <div class="manual-input">
+                        <div class="input-group">
+                            <input type="number" id="seroprotection" min="0" max="100" required>
+                            <label for="seroprotection">Seroprotection (%)</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="date" id="lastVaccinationDate" required>
+                            <label for="lastVaccinationDate">Last Vaccination Date</label>
+                        </div>
+                    </div>
+                    <div class="file-upload">
+                        <p>OR</p>
+                        <label for="csvFile" class="btn btn-secondary">
+                            <i class="fas fa-upload"></i> Upload CSV
+                        </label>
+                        <input type="file" id="csvFile" accept=".csv" hidden>
+                        <span id="fileName"></span>
+                        <button id="calculate" class="btn">Calculate Risk</button>
+                        <button id="refresh" class="btn btn-secondary"><span>&#8635;</span> Refresh </button>
+                    </div>
+                </div>
+                <div id="errorMessages" class="error-messages"></div>
+                <div id="results" class="results"></div>
+                <div class="risk-timeline">
+                    <canvas id="riskTimeline"></canvas>
+                </div>
+                <div class="admonition note">
+                    <div class="admonition-title">
+                        <i class="fa-solid fa-circle-info"></i> Note
+                    </div>
+                    <p>Risk calculation is based on herd immunity threshold ranges estimated using SIRSV compartmental model and assumes immunity loss due to antibody waning in livestock population.</p>
+                </div>
+            </div>                           
+            <div id="miscellaneous" class="tab-content">
+                <h2>Additional Information</h2>
+                <p>TBA.</p>
+                <!-- Add more content as needed -->
+            </div>
+        </div>
+    </div>
+    <footer class="fixed-footer">
+        <p>&copy; <span id="currentYear"></span> All rights reserved by ARTPARK in collaboration with the Indian Institute of Science (IISc), the International Centre for Theoretical Sciences (ICTS), and ICAR-NIVEDI.</p>
+        <p>For additional details, please contact: <a href="mailto:onehealth@artpark.in">onehealth@artpark.in</a></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
