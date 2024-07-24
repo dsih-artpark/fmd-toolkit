@@ -158,4 +158,7 @@ dmypy.json
 *.shx
 *.dbf
 *.prj
-!sample_data.csv
+!sample_data/seromonitoring_data.csv
+!images/artpark.png
+!images/icts.jpg
+!images/iisc.jpg
