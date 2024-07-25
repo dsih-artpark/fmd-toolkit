@@ -2,8 +2,6 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/3ee1716d-a9bd-4885-9fce-64768371d17f/deploy-status)](https://app.netlify.com/sites/fmd-toolkit/deploys)
 
-# FMD Toolkit
-
 The FMD Toolkit is a static website designed as a decision support tool for veterinary officials to aid in the management and control of foot-and-mouth disease (FMD).
 
 ## Features
