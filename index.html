@@ -22,7 +22,7 @@
                 <ul>
                     <li><a href="#general-info" class="active"><i class="fas fa-info-circle"></i>General Overview</a></li>
                     <li><a href="#risk-calculator"><i class="fas fa-calculator"></i> FMD Risk Calculator</a></li>
-                    <li><a href="#miscellaneous"><i class="fas fa-ellipsis-h"></i> Miscellaneous</a></li>
+                    <li><a href="#glossary"><i class="fas fa-ellipsis-h"></i> Glossary</a></li>
                 </ul>
             </nav>
         </aside>
@@ -72,10 +72,101 @@
                     <p>Risk calculation is based on herd immunity threshold ranges estimated using SIRSV compartmental model and assumes immunity loss due to antibody waning in livestock population.</p>
                 </div>
             </div>                           
-            <div id="miscellaneous" class="tab-content">
-                <h2>Additional Information</h2>
-                <p>TBA.</p>
-                <!-- Add more content as needed -->
+            <div id="glossary" class="tab-content">
+                <h2 class="glossary-main-heading">Glossary</h2>
+                
+                <h3 class="glossary-subheading">Foot-and-mouth disease terms</h3>
+
+                <h4>serum</h4>
+                <p>Serum is the clear, yellowish fluid component of blood that remains after clotting, containing various proteins, antibodies, and other substances, but excluding blood cells and clotting factors.</p>
+
+                <h4>structural protein</h4>
+                <p>Proteins that form the physical structure of the virus particle, including the viral capsid, which encases and protects the viral genetic material.</p>
+
+                <h4>non-structural protein</h4>
+                <p>Proteins produced by the virus during its replication cycle that are not part of the final virus particle structure, but are essential for viral replication and other functions within the host cell.</p>
+
+                <h4>antigen</h4>
+                <p>An antigen is a substance (usually a protein or polysaccharide) that stimulates an immune response in the body, typically by triggering the production of antibodies.</p>
+
+                <h4>antibody</h4>
+                <p>An antibody is a protein produced by the immune system in response to a specific antigen, designed to recognise and help neutralise or destroy that particular antigen. Antibodies are found in serum, which is the liquid portion of blood after it has clotted and blood cells have been removed.</p>
+                
+                <h4>serotype</h4>
+                <p>A distinct variation within a species of virus characterised by having a specific set of antigens. There are seven serotypes of the foot-and-mouth disease virus: O, A, C, SAT 1, SAT 2, SAT 3, and Asia 1.</p>
+                
+                <h4>seromonitoring</h4>
+                <p>Seromonitoring in the context of the FMD Control Programme involves collecting and analysing pre- and post-vaccination blood samples from randomly selected animals to assess the efficacy of both the vaccine and the vaccination program.</p>
+
+                <h4>DIVA</h4>
+                <p>DIVA (Differentiating Infected from Vaccinated Animals) is a diagnostic approach using NSP-ELISA that allows distinction between animals infected with foot-and-mouth disease virus and those that have only been vaccinated, based on the presence of antibodies to non-structural proteins (NSPs) of the virus.</p>
+
+                <h4>serosurveillance</h4>
+                <p>Serosurveillance in terms of DIVA is the systematic monitoring of antibodies against FMD virus structural and non-structural proteins in animal populations, using blood serum samples. It allows differentiation between vaccinated and infected animals, helping to assess and detect potential virus circulation in a population.</p>
+
+                <h4>immunity waning</h4>
+                <p>Gradual decrease in protective immune response over time following vaccination or natural infection, potentially leaving an individual susceptible to reinfection or disease.</p>
+
+                <h3 class="glossary-subheading">Epidemiology terms</h3>
+
+                <h4>susceptible</h4>
+                <p>An individual who is able to become infected.</p>
+                
+                <h4>incidence</h4>
+                <p>The number of new cases of a disease that occur during a specified period of time in a population at risk for developing the disease.</p>
+                
+                <h4>prevalence</h4>
+                <p>The total number of cases of a disease in a given population at a specific time. It is different from incidence, which measures new cases over a period.</p>
+
+                <h4>compartmental model</h4>
+                <p>A rule-based disease model that divides the total population into a number of compartments that represent different disease states, such as susceptible, infected, recovered or vaccinated.</p>
+
+                <h4>herd immunity threshold</h4>
+                <p>The minimum proportion of a population that needs to be immune to an infectious disease to prevent sustained spread within that population.</p>
+
+                <h4>basic reproductive number</h4>
+                <p>In a fully susceptible population, the basic reproductive number R0 is the number of secondary infections generated by the first infectious individual over the course of the infectious period.</p>
+
+                <h4>scenario</h4>
+                <p>A scenario refers to a specific set of assumptions, conditions, and parameters used to explore and analyse potential future outcomes or behaviours of a system. Scenarios are designed to represent different possible realities or situations, often to evaluate the impact of various factors or decisions. In epidemiological modelling, scenarios might include different rates of disease transmission, varying levels of population immunity, or changes in behaviour patterns. Scenarios help researchers and policymakers understand the potential consequences of different actions and prepare for a range of possible futures.</p>
+
+                <h4>intervention</h4>
+                <p>An intervention is an action or strategy implemented to alter the course of events within a system, typically aimed at achieving a specific desired outcome. In epidemiological models, interventions might include public health measures such as vaccination, social distancing, quarantine, or treatment protocols. Interventions are tested within the model to evaluate their effectiveness in controlling or mitigating the spread of a disease, reducing morbidity and mortality, or preventing outbreaks. The results from these simulations inform decision-making and the development of effective health policies and strategies.</p>
+
+                <h4>SIR model</h4>
+                <p>A generic epidemiological model that provides a simplified means of describing the transmission of an infectious disease through individuals where those individuals can pass through the following five states: susceptible, infectious, and recovered.</p>
+
+                <h4>SIRS model</h4>
+                <p>The SIRS model is an extension of the SIR model that includes the possibility of immunity waning over time. In this model, individuals can move from the Recovered state back to the Susceptible state, reflecting the loss of immunity and potential for reinfection.</p>
+
+                <h4>SIRSV model</h4>
+                <p>The SIRSV model is an extension of the SIRS model that incorporates the possibility of vaccination. In this model, individuals can move through the states of Susceptible, Infectious, Recovered, and Susceptible again (due to waning immunity), with an additional Vaccinated state. Vaccinated individuals are assumed to have partial or full immunity, reducing their likelihood of moving to the Infectious state. This model reflects both natural and vaccine-induced immunity dynamics, including waning immunity and reinfection.</p>
+
+                <h4>patch simulation model</h4>
+                <p>PatchSim model is an epidemiological framework used to represent the spread of infectious diseases across multiple, distinct geographical areas or "patches." Each patch has its own population and disease dynamics, but patches are interconnected through movement or migration of individuals between them. This model allows for the simulation of localized outbreaks, the effects of regional interventions, and the spread of disease through travel or other forms of connectivity between patches. It is particularly useful for studying diseases in heterogeneous environments and for evaluating the impact of spatially targeted control strategies.</p>
+
+                <h3 class="glossary-subheading">System terms</h3>
+
+                <h4>simulation time</h4>
+                <p>Simulation time refers to the discrete or continuous representation of time within a simulation model. It serves as the timeline over which the model's processes and events are executed and observed.</p>
+                
+                <h4>model</h4>
+                <p>A model is an abstract description of a system that uses precise language to describe its behaviour or inter-relationships.</p>
+
+                <h4>ordinary differential equation (ODE)</h4>
+                <p>An ordinary differential equation (ODE) is a mathematical equation that relates a function to its derivatives. It involves one or more functions of a single independent variable and their derivatives. ODEs are used to describe the behaviour of dynamic systems, where the rate of change of a variable is dependent on the variable itself. In epidemiological modelling, ODEs are commonly used to model the spread of infectious diseases by representing the changes in populations of susceptible, infected, and recovered individuals over time.</p>
+
+                <h4>timescale parameter</h4>
+                <p>A timescale parameter in a model quantifies the rate of temporal change for specific processes or dynamics within the system. It determines the duration over which changes occur, such as the rate of disease progression or recovery, and is essential for accurately representing and predicting system behaviour.</p>
+
+                <h4>GeoJSON File</h4>
+                <p>A GeoJSON file is a widely used format for encoding a variety of geographic data structures using JavaScript Object Notation (JSON). It is designed to represent simple geographical features, along with their non-spatial attributes. GeoJSON supports several geometry types, such as points, lines, and polygons, and can be used to describe the shape and properties of various geographical entities, including cities, roads, and country borders.</p>
+
+                <h4>node</h4>
+                <p>A node is a fundamental unit or point within a network or graph that represents an entity or a location. In epidemiological models, nodes can represent individuals, households, or geographical locations such as cities or regions. Nodes are connected by edges or links, which signify interactions, movements, or relationships between the nodes.</p>
+
+                <h4>Network</h4>
+                <p>A network is a collection of interconnected nodes and edges that represent relationships, interactions, or pathways between entities. Networks are used to model a wide range of systems across various fields, including epidemiology, social science, computer science, and biology.</p>
             </div>
         </div>
     </div>

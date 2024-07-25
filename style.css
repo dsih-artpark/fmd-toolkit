@@ -436,3 +436,10 @@ footer a:hover {
     border-bottom-right-radius: 4px;
 }
 
+.glossary-main-heading {
+    margin-bottom: 30px;
+}
+
+.glossary-subheading {
+    margin-top: 30px;
+}
